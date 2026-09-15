@@ -69,3 +69,7 @@ Die Statistik fasst Zahlungen je Monat in einem Durchlauf zusammen und berechnet
 ## Aktueller Stand: Monatsdetails und Papierkorb
 
 Die bisherige Auswahl 30/90 Tage entfällt: Papierkorb jetzt ausschließlich 90 Tage ab Löschdatum. Vorhandene 30-Tage-Einträge werden auf 90 Tage verlängert; bereits entfernte Einträge werden nicht rekonstruiert. Monatsbalken zeigen bei Überfahren, Fokus oder Klick offene Mietbeträge je Mieter; die zusätzliche Monatstabelle der Startseite entfällt. Backlog-Prioritäten bleiben per Ziehgriff sortierbar, die Pfeilknöpfe entfallen.
+
+## Erweiterte Detailstatistik
+
+Häuservergleich mit monatlichen Eingängen, offenen Mietbeträgen, erfassten Rechnungskosten und Werten je m². Kostenarten lassen sich zu den zugehörigen Rechnungen aufklappen. Rückstände werden ab einem wählbaren Mietmonat bis zu einem Stichtag aufgeteilt (noch nicht fällig, bis 30, 31–60, über 60 Tage); Zahlungen nach dem Stichtag bleiben unberücksichtigt. Einstellbare Fälligkeit je Mietverhältnis als Kalendertag, ausdrücklich Demo-Vorgabe 3, ohne Werktags-/Feiertagsregel. Die Leerstandsquote verwendet Wohnungstage im gewählten Monat und überschneidungsfreie belegte Zeiträume. Optionale Zielkaltmieten ermöglichen eine separate Leerstandsschätzung; fehlende Zielmieten bleiben als fehlend erkennbar. Alle vier Erweiterungen reagieren auf den Hausfilter. Die Seniorenzeichnung trägt nun OPA ON TOUR.
