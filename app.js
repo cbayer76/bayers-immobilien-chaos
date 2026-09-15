@@ -33,3 +33,4 @@ setupEnhanced();
 setupTrash();
 setupProperties();
 initStorage();
+app.addEventListener('click',e=>{const b=e.target.closest('[data-stats-category]');if(!b||!statsCategories.some(([id])=>id===b.dataset.statsCategory))return;statsCategory=b.dataset.statsCategory;render();app.querySelector(`[data-stats-category="${statsCategory}"]`)?.focus();});
