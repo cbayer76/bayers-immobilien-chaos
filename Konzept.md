@@ -4,7 +4,7 @@
 
 Eine Desktop-Anwendung zur Verwaltung mehrerer Miethäuser mit mehreren Wohneinheiten. Sie richtet sich besonders an Senioren mit wenig Computererfahrung. Einfach verständliche Bedienung hat Vorrang vor vielen Zusatzfunktionen.
 
-Status: Das Konzept ist festgehalten. Die Anwendung ist noch nicht implementiert. Betriebssystem und technische Umsetzung sind noch festzulegen.
+Status: Eine interaktive Web-Demo ist implementiert. Die installierbare Desktop-Anwendung und eine gemeinsame Büro-Datenhaltung stehen noch aus. Das Zielbetriebssystem ist noch festzulegen.
 
 ## Grundstruktur
 
@@ -14,7 +14,7 @@ Haus → Wohneinheit → Mietverhältnis.
 - Wohneinheit: Wohnungsnummer, Etage, Wohnfläche und Vermietungsstatus.
 - Mietverhältnis: Mieter, Kontaktdaten, Mietbeginn und Mietende, Kaltmiete, Nebenkostenvorauszahlung und Kaution. Frühere Mietverhältnisse und Änderungen der Miethöhe bleiben nachvollziehbar.
 
-## Startseite: vier große Schaltflächen
+## Startseite: sechs Bereiche und Statistik-Dashboard
 
 ### 1. Häuser und Wohnungen
 
@@ -50,6 +50,22 @@ Ein geführter Ablauf mit jeweils wenigen Eingaben:
 7. Abrechnung als PDF speichern und drucken.
 
 Berechnungsgrundlagen müssen sichtbar und fehlende Angaben konkret benannt sein. Vor der Implementierung sind die fachlichen Berechnungsregeln, insbesondere für Heizkosten und Mieterwechsel, zu konkretisieren und zu prüfen.
+
+### 5. Verträge und Dokumente
+
+Versicherungs-, Versorger- und sonstige Verträge einem Haus zuordnen. Partner, Vertragsnummer, Beginn, Ende, Kündigungsfrist, Jahresbetrag und Notiz hinterlegen. Vertragsdateien lokal speichern und herunterladen. Die Demo enthält neun Musterverträge. Eine gemeinsam genutzte, abgesicherte Büroablage ist ein späterer Umsetzungsschritt.
+
+### 6. Steuerberater-Daten
+
+Jahrespaket je Haus oder über alle Häuser als ZIP mit CSV-Listen, Belegen und Verträgen bereitstellen. Enthalten sind Jahres-/Monatssummen, Mieteingänge mit Zahlungsdatum und Mietmonat, getrennte Kaltmiet- und Nebenkostenanteile, ungeklärte Anteile, Rechnungs- und Zahlungsjournal, Mietkonten, Stammdaten und Vertragsregister. Kautionen bleiben separat; Vertragsbeträge sind keine zusätzlichen Ausgaben. Kontierung, steuerliche Behandlung, Abschreibungen und Finanzierung sind nicht implementiert und mit der Kanzlei abzustimmen.
+
+### Statistik-Dashboard
+
+Monatsübersicht nach Haus, Zahlungsdeckung, offene Mieten, Ausgaben nach Kostenart und Jahresverlauf von tatsächlichen Mietzahlungseingängen und bezahlten Rechnungen. Beide Bedienversionen zeigen dieselben Zahlen.
+
+### Demo-Daten
+
+Drei Häuser mit 7, 7 und 6 Wohnungen und insgesamt 20 Mietern. Zahlungseingänge und Rechnungen für das vollständige Jahr 2025 und Januar bis September 2026. Teilzahlung, Überzahlung und fehlende Miete als Testfälle. Alle Personen, Lieferanten und Dokumente sind erfunden.
 
 ## Bedienung
 
