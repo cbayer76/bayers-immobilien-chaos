@@ -94,3 +94,7 @@ Bestätigung im Sprachdialog bezieht sich ausdrücklich auf die dort vorgestellt
 Aus hochgeladenen Rechnungen Lieferant, Rechnungsnummer, Datum und Betrag auslesen sowie Haus und Kostenart vorschlagen. Erkannte Angaben vor Übernahme prüfen und korrigieren können; mögliche doppelte Rechnungen markieren. Im nachfolgenden Sprachdialog ausdrücklich bestätigt.
 
 Die Auswahlrunde ist abgeschlossen. Neun Verbesserungen sind für später bestätigt; Benutzerkonten und Rollen sowie die zusätzlich vorgeschlagenen Funktionen Dokumentenversionierung und allgemeines Aufgabenboard sind abgelehnt. Der spätere Umsetzungsstart wurde inzwischen ausdrücklich erteilt. Die nur kurz erwähnte zusätzliche Leerstands-/Fristenansicht ist nicht separat bestätigt; Leerstand im Rahmen des bestätigten Mieterwechsels bleibt enthalten.
+
+## Spätere Idee: Formular für neue Mieter
+
+**Als Idee vorgemerkt, noch nicht zum Einbau freigegeben.** Neue Mieter sollen Kontakt-, Adress- und Bankdaten erfassen und ihren Mietvertrag ansehen/herunterladen können. Einen Zugang oder Unterlagen später gegebenenfalls per WhatsApp oder E-Mail bereitstellen. Keine digitale Unterschrift vereinbart; Versand und Zugriffsschutz vor Umsetzung konkretisieren. Keine echten Mieterdaten im öffentlichen Demo-Projekt.

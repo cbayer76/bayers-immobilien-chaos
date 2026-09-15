@@ -52,3 +52,7 @@ Die abgelehnten individuellen Benutzerrollen, Dokumentenversionierung und das al
 - Lokale Sicherungsverwaltung mit simulierter IndexedDB-Schnittstelle geprüft; keine Behauptung einer echten Cloud-Speicherung.
 - OCR-Engine mit einer gerenderten erfundenen Rechnung geprüft: Rechnungsnummer und deutscher Dezimalbetrag korrekt erkannt. Keine vollständige Browser-/Gerätekompatibilitätsprüfung.
 - Erzeugte zweitseitige Abrechnungs-PDF textlich und visuell geprüft. ZIP-Export auf Archivfehler geprüft.
+
+## Performance-Verbesserung
+
+Die Statistik fasst Zahlungen je Monat in einem Durchlauf zusammen und berechnet den Sollbetrag nur einmal pro Wohnung. Kein Zwischenspeicher, der nach Änderungen veralten kann. Ergebnisse für sämtliche Demo-Monate und Häuser gegen die bisherige Berechnung geprüft; einschließlich leerer Zeiträume und Überzahlungen. Bei lokalen Sicherungen entfällt eine zusätzliche vollständige Kopie vor der ohnehin kopierenden IndexedDB-Speicherung. Sicherungs- und Wiederherstellungstests unverändert bestanden. Keine gemessene Aussage über die Ladegeschwindigkeit auf echten Mobilgeräten.
