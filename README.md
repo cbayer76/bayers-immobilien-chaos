@@ -1,27 +1,21 @@
 # Bayers Immobilien Chaos Webseite
 
-Seniorenfreundliche, deutschsprachige Bedienvorschau für eine geplante Desktop-Anwendung. Eigenständiges Projekt; keine Verbindung zu anderen Anwendungen.
+Deutschsprachige Web-Demo mit Senioren- und Standardansicht für die Verwaltung von Miethäusern.
 
-## Vorschau
+Die aktuelle Funktionsbeschreibung, Prüfungen und offenen Anschlüsse stehen in [DEMOVERSION.md](DEMOVERSION.md). Entscheidungen sind in [Backlog.md](Backlog.md) dokumentiert.
 
-Lokal liegen die statischen Dateien unter `dist/`, im GitHub-Repository direkt im Stammverzeichnis. Die Veröffentlichung erfolgt über GitHub Pages. Keine externen JavaScript-Abhängigkeiten. Zum Testen mit Dokumentenspeicherung über HTTP(S) öffnen.
+## Demodaten
 
-Enthalten: Senioren- und Standardansicht, Haus- und Wohnungsansicht, Mietzahlungen mit Teil- und Überzahlungen, Rechnungserfassung samt Belegen, vereinfachte Beispielabrechnung, Vertragsablage, Jahresdatenexport für die Kanzlei, Monatsstatistik und Jahresverlauf. Die Wahl der Ansicht bleibt auf dem Gerät gespeichert.
+3 Häuser, 20 Wohnungen, 20 ursprüngliche Mietverhältnisse, 419 Mieteingänge, 201 Rechnungen und 9 Musterverträge. Ausgangsdaten: vollständiges Jahr 2025 sowie Januar bis September 2026. Alle Personen und Belege sind erfunden.
 
-Die Demo enthält 3 Häuser mit 7, 7 und 6 Wohnungen, 20 Mietern, 419 Zahlungseingängen, 201 Rechnungen mit Musterbelegen und 9 Musterverträgen. Vollständiges Demo-Jahr 2025 und Januar bis September 2026. Vertrags- und Belegmuster sind deutlich gekennzeichnete Textdateien.
+## Neue Abläufe
 
-Verträge: Haus, Art, Partner, Nummer, Beginn, Ende, Kündigungsfrist, Jahresbetrag, Notiz und Datei. PDF, PNG, JPEG oder Text bis 10 MB lassen sich lokal ablegen und herunterladen. Auch Rechnungen unterstützen Belegdateien.
+Mietverhältnisse und Checklisten, Kautionsbewegungen, Zahlungserinnerungs-PDFs, Vertragsfristen, CSV-Bankabgleich, Belegerkennung, erweiterter Kanzlei-Export sowie Nebenkosten-PDFs mit Verteilerschlüsseln und Mietzeiträumen sind bedienbar.
 
-Unter Steuerberater-Daten kann nach Jahr und Haus ein ZIP-Paket heruntergeladen werden. Es enthält 7 CSV-Dateien, Belege, Verträge und Erläuterungen. Mietzahlungen werden nach tatsächlichem Zahlungstag ausgewählt; Mietmonat und Zahlungstag bleiben separat. Rechnungs- und Zahlungsdatum werden getrennt ausgewertet. Ungeklärte Zahlungsanteile und fehlende Belege sind sichtbar. Kautionen werden nur als vereinbarte Beträge, nicht als Einnahmen geführt. Vertragsjahresbeträge werden nicht zusätzlich als Ausgaben gezählt.
+## Speicher und externe Anschlüsse
 
-## Grenzen
+Weiterhin lokale IndexedDB-Speicherung. Automatische lokale Wiederherstellungspunkte und verschlüsselte Sicherungsdateien sind vorhanden. Es gibt noch keine zentrale Cloud-Datenbank oder echte Bankverbindung. Das Kanzleiformat und steuerliche Zuordnungen sind noch abzustimmen. Kein fertiger Jahresabschluss, keine Produktionsfreigabe.
 
-Dies ist eine interaktive Demo mit erfundenen Daten, keine fertige Verwaltungssoftware. Keine echten Mieterdaten eingeben. Daten und Dokumente werden mit IndexedDB auf dem jeweiligen Browsergerät gespeichert, sofern verfügbar; Fehler werden angezeigt. Diese Ablage ist keine gemeinsame Büroablage, kein revisionssicheres Archiv und keine automatische externe Sicherung. Kein Login, keine Bank-/CSV-Anbindung und keine installierbare Desktop-Paketierung. Stammdaten sind in der Demo nur lesbar. Rückgängig-Verlauf gilt für die laufende Sitzung.
+## Entwicklung
 
-Der Jahresexport ist eine Vorbereitungsgrundlage, kein fertiger Jahresabschluss oder DATEV-Buchungsstapel. Eigentümer-/Mandantenzuordnung, Konten, Steuerschlüssel, steuerliche Behandlung, Abschreibungen und Finanzierung sind mit der Kanzlei festzulegen. Die CSV-Daten enthalten keine erfundene Kontierung oder Steuerberechnung. Quelle zur Abstimmung von Importfeldern/Kontenzuordnung: https://www.datev.de/dnlexom/v2/content/files/st1458361995_de.pdf
-
-Validierung: JavaScript-Syntax, Demo-Anzahlen, Haus-/Jahressummen, Jahresgrenzen nach Zahlungsdatum, Summenabgleich, Ansichtsrendering, Rückgängig, CSV-Escaping und dokumenthaltiger Speicher-Roundtrip mit einer simulierten IndexedDB-Schnittstelle. Export-ZIPs zusätzlich mit `unzip -t` geprüft. Keine echte Browserprüfung der IndexedDB oder visuelle Prüfung durchgeführt.
-
-Die Beispielabrechnung verteilt ausgewählte Kosten nach Wohnfläche und berücksichtigt manuell eingetragene Vorauszahlungen. Sie ist keine fachlich geprüfte Nebenkostenabrechnung. Heizkosten, Verbrauch, Mieterwechsel und individuelle Verteilerschlüssel benötigen eine spätere Implementierung und Prüfung.
-
-Das Zielkonzept steht in `Konzept.md`.
+Lokal liegen die statischen Dateien unter dist/, im veröffentlichten Repository im Stammverzeichnis. PDF- und OCR-Bibliotheken werden bei Bedarf geladen; Lizenzdateien liegen unter vendor/. OCR lädt beim ersten Einsatz externe Modul- und Sprachdateien, verarbeitet Rechnungen jedoch lokal. PDF-Vorschauen wurden visuell geprüft. Die Modultests ersetzen keine vollständige Browser-/Geräteprüfung.
