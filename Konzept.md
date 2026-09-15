@@ -53,6 +53,8 @@ Berechnungsgrundlagen müssen sichtbar und fehlende Angaben konkret benannt sein
 
 ## Bedienung
 
+Auf jeder Ansicht steht oben ein Umschalter zwischen Senioren-Version und Standard-Version. Die Senioren-Version ist beim ersten Besuch voreingestellt. Die Wahl wird auf dem jeweiligen Gerät gespeichert. Beide Ansichten bieten dieselben Funktionen und Daten; ein Wechsel erhält laufende Eingaben. Die Standard-Version verwendet kompaktere Abstände und eine dichtere Übersicht. Neue Funktionen werden grundsätzlich für beide Ansichten vorgesehen.
+
 - Desktop-Oberfläche mit großer, gut lesbarer Schrift und starken Kontrasten.
 - Große, beschriftete Schaltflächen; Status nicht ausschließlich durch Farben vermitteln.
 - Einheitliche Anordnung und wenige Entscheidungen je Bildschirm.
