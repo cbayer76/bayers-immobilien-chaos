@@ -69,6 +69,10 @@ Ein allgemeines Teamboard mit Zuständigkeiten und Fälligkeiten wird nicht ben�
 
 Neben dem vereinbarten Betrag tatsächliche Kautionszahlungen, Raten, offene Beträge und spätere Rückzahlungen erfassen. Dokumentierte Einbehalte und zugehörige Belege nachvollziehbar führen. Kautionsbewegungen separat von Mieteinnahmen ausweisen.
 
+## Zusatz: Papierkorb
+
+**Bestätigt und in der Demo umgesetzt.** Gelöschte Objekte 30 oder 90 Tage aufbewahren (Standard: 90 Tage), mit Löschdatum und Wiederherstellung zusammengehöriger Daten. Fristablauf beim Öffnen/Bedienen; Sicherungen können ältere Kopien enthalten.
+
 ## 10. Vertragsfristen und Kündigungstermine
 
 **Bestätigt. In der Demo umgesetzt: geprüfte Kündigungstermine und Hinweise beim Öffnen. Keine Hintergrundbenachrichtigung.**

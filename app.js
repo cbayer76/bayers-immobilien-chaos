@@ -30,4 +30,5 @@ app.addEventListener('submit',e=>{if(!['payment-form','bill-form'].includes(e.ta
 render();
 setupOffice();
 setupEnhanced();
+setupTrash();
 initStorage();

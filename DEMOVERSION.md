@@ -37,6 +37,15 @@ Automatische lokale Wiederherstellungspunkte (maximal fünf), vollständige Sich
 
 Die abgelehnten individuellen Benutzerrollen, Dokumentenversionierung und das allgemeine Aufgabenboard wurden nicht eingebaut. Keine installierbare Desktop-Paketierung; weiterhin eine Web-Demo ohne Produktionsfreigabe.
 
+## Papierkorb
+
+- Häuser, Wohnungen, Mietverhältnisse, Mietzahlungen, Rechnungen, Verträge und Kautionsbewegungen lassen sich mit Bestätigung in den Papierkorb verschieben.
+- Wahlweise 30 oder 90 Tage Aufbewahrung, standardmäßig 90 Tage. Änderungen gelten für zukünftige Löschungen.
+- Zugehörige Datensätze, Dokumente und Checklisten werden gemeinsam verschoben und wiederhergestellt. Gelöschte Daten fehlen in laufenden Auswertungen.
+- Wiederherstellung prüft fehlende übergeordnete Objekte, doppelte Kennungen, überschneidende Mietverhältnisse und Zahlungs-/Kautionskonflikte.
+- Abgelaufene Einträge werden beim nächsten Öffnen oder Bedienen entfernt. Frühere Sicherungen können weiterhin Kopien enthalten; keine serverseitige Löschung im Hintergrund.
+- Wiederherstellung eines kompletten Hauses einschließlich Dokumenten, 30-/90-Tage-Fristen und Konfliktfälle sind durch Modultests geprüft.
+
 ## Prüfung
 
 - Integrierte Modultests für Ansichten, Demo-Summen, Schaltjahr, Wechsel mitten im Monat, Überschneidung, Leerstand, Centverteilung, Verbrauchsfehler, Dienstleister-Summen, Vorauszahlungen, Kautionen, CSV/Dubletten, Exporte, verschlüsselte Sicherung mit Dokumenten und falsches Passwort.
