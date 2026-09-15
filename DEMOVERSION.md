@@ -65,3 +65,7 @@ Die Statistik fasst Zahlungen je Monat in einem Durchlauf zusammen und berechnet
 - Passwortbasierter Demo-Einstieg ohne Benutzername, Projektübersicht mit aktuellem Stand und Backlog, Abmeldung und Rückkehr zur Übersicht. Kein echter Zugangsschutz, keine Authentifizierung am Server; keine vertraulichen Daten verwenden. Das Demo-Passwort wird nicht im Klartext im ausgelieferten Code oder als Hinweis angezeigt. Der im Browser prüfbare Hash bietet keinen Schutz der öffentlichen Anwendung.
 - Neues SVG-Logo samt Favicon; große Illustration „Schnecke auf dem Fahrrad“ auf der Startseite ausschließlich in der Senioren-Version. Optimiertes WebP-Bild.
 - Modultests für Neuanlage/Validierung/ID-Reservierung, Zahlungsaufteilung und Zeitraum, kombinierte Vertragsfilter sowie bestehende Berechnungs-/Sicherungsfunktionen. Browserprüfung für Passwortfehler und Anmeldung, Projektübersicht, Objektanlage, Vertragsfilter und Fristspeicherung, Umschalten der Illustration.
+
+## Aktueller Stand: Monatsdetails und Papierkorb
+
+Die bisherige Auswahl 30/90 Tage entfällt: Papierkorb jetzt ausschließlich 90 Tage ab Löschdatum. Vorhandene 30-Tage-Einträge werden auf 90 Tage verlängert; bereits entfernte Einträge werden nicht rekonstruiert. Monatsbalken zeigen bei Überfahren, Fokus oder Klick offene Mietbeträge je Mieter; die zusätzliche Monatstabelle der Startseite entfällt. Backlog-Prioritäten bleiben per Ziehgriff sortierbar, die Pfeilknöpfe entfallen.
