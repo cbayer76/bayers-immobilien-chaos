@@ -98,3 +98,11 @@ Die Auswahlrunde ist abgeschlossen. Neun Verbesserungen sind für später bestä
 ## Spätere Idee: Formular für neue Mieter
 
 **Als Idee vorgemerkt, noch nicht zum Einbau freigegeben.** Neue Mieter sollen Kontakt-, Adress- und Bankdaten erfassen und ihren Mietvertrag ansehen/herunterladen können. Einen Zugang oder Unterlagen später gegebenenfalls per WhatsApp oder E-Mail bereitstellen. Keine digitale Unterschrift vereinbart; Versand und Zugriffsschutz vor Umsetzung konkretisieren. Keine echten Mieterdaten im öffentlichen Demo-Projekt.
+
+## Aktuelles UI-Update
+
+Umgesetzt: Häuser/Wohneinheiten anlegen, Kurzübersicht und 24-Monats-Verlauf der Mietzahlungen, Vertragsartenfilter und integrierte Kündigungstermine, Logo, Senioren-Illustration sowie Passwort-Demo-Einstieg mit Projektübersicht. Der Demo-Einstieg wurde ausdrücklich gewählt; echtes Rollenmanagement bleibt abgelehnt. Ein serverseitig geschützter Zugang ist weiterhin nicht eingerichtet.
+
+## OCR-Vergleich
+
+Microsoft Document Intelligence und Google Document AI anhand typischer Rechnungen vergleichen. Noch kein kostenpflichtiger Dienst angeschlossen; Hauszuordnung und gemerkte Korrekturen sind noch offen.

@@ -56,3 +56,12 @@ Die abgelehnten individuellen Benutzerrollen, Dokumentenversionierung und das al
 ## Performance-Verbesserung
 
 Die Statistik fasst Zahlungen je Monat in einem Durchlauf zusammen und berechnet den Sollbetrag nur einmal pro Wohnung. Kein Zwischenspeicher, der nach Änderungen veralten kann. Ergebnisse für sämtliche Demo-Monate und Häuser gegen die bisherige Berechnung geprüft; einschließlich leerer Zeiträume und Überzahlungen. Bei lokalen Sicherungen entfällt eine zusätzliche vollständige Kopie vor der ohnehin kopierenden IndexedDB-Speicherung. Sicherungs- und Wiederherstellungstests unverändert bestanden. Keine gemessene Aussage über die Ladegeschwindigkeit auf echten Mobilgeräten.
+
+## Erweiterung: Objekte, Zahlungsübersicht und Einstieg
+
+- Häuser mit Name/Adresse und Wohneinheiten mit Wohnfläche anlegen. Neue Wohnungen sind zunächst leer; anschließend kann ein Mietverhältnis angelegt werden. Doppelte Bezeichnungen innerhalb eines Hauses werden abgewiesen. IDs im Papierkorb bleiben reserviert.
+- Mietzahlungen: Kurzübersicht bezahlt/offen/Soll und 24 Monate bis einschließlich des gewählten Mietmonats. Offene Beträge werden je Mietverhältnis berechnet, Überzahlungen separat. Monatstabelle ergänzt die Grafik; ältere Demo-Zeiträume enthalten keine vollständige Zahlungshistorie.
+- Vertragsarten- und Hausfilter kombinierbar. Geprüfte Kündigungstermine direkt bei jedem Vertrag bearbeiten; die separate Startseiten-Kachel entfällt.
+- Passwortbasierter Demo-Einstieg ohne Benutzername, Projektübersicht mit aktuellem Stand und Backlog, Abmeldung und Rückkehr zur Übersicht. Kein echter Zugangsschutz, keine Authentifizierung am Server; keine vertraulichen Daten verwenden. Das Demo-Passwort wird nicht im Klartext im ausgelieferten Code oder als Hinweis angezeigt. Der im Browser prüfbare Hash bietet keinen Schutz der öffentlichen Anwendung.
+- Neues SVG-Logo samt Favicon; große Illustration „Schnecke auf dem Fahrrad“ auf der Startseite ausschließlich in der Senioren-Version. Optimiertes WebP-Bild.
+- Modultests für Neuanlage/Validierung/ID-Reservierung, Zahlungsaufteilung und Zeitraum, kombinierte Vertragsfilter sowie bestehende Berechnungs-/Sicherungsfunktionen. Browserprüfung für Passwortfehler und Anmeldung, Projektübersicht, Objektanlage, Vertragsfilter und Fristspeicherung, Umschalten der Illustration.
