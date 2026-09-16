@@ -12,6 +12,8 @@ function enhanceData(){
  data.checklistTemplates??={in:['Mietvertrag unterschrieben ablegen','Kautionszahlung prüfen','Übergabetermin vereinbaren','Wohnungszustand und Fotos dokumentieren','Zählerstände aufnehmen','Schlüsselanzahl und Übergabe dokumentieren','Kontaktdaten und Namensschild prüfen'],out:['Auszugsdatum und Übergabetermin bestätigen','Wohnungszustand und Fotos dokumentieren','Zählerstände aufnehmen','Schlüssel vollständig zurücknehmen','Nachsendeadresse erfassen','Offene Zahlungen und Kaution prüfen','Abschlussabrechnung vorbereiten']};
  data.checklists??={};data.settlements??={};data.bankItems??=[];data.exportProfile??={name:'',mandate:'',accounts:{}};
  for(const c of data.contracts)if(c.deadline===undefined)c.deadline=c.id.startsWith('V-')&&c.note==='Erfundener Mustervertrag zur Demonstration.'?'2026-09-30':'';
+ data.tenants??=[];
+ for(const l of data.leases){if(!l.tenantId){l.tenantId='T-'+l.id;}if(!data.tenants.some(t=>t.id===l.tenantId))data.tenants.push({id:l.tenantId,name:l.tenant,email:l.email||'',phone:'',address:''});}
  data.enhancedVersion=1;
 }
 function leasesInMonth(unit,m){const [a,b]=monthBounds(m);return data.leases.filter(l=>l.unit===unit&&periodOverlap(l.start,l.end||'9999-12-31',a,b)>0);}
